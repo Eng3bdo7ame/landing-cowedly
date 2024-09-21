@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Orbitron:wght@400..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+/* body {
+  font-family: "Tajawal";
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.box1 {
+  background: url(./images/Mask\ group.svg) no-repeat 50% 50%;
+}
+
+.box2 {
+  background: url(./images/Mask\ group\ \(2\).svg) no-repeat 50% 50%;
+}
+
+.box3 {
+  background: url(./images/Mask\ group\ \(1\).svg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.group {
+  background: url(../app/images/Group\ 143725869.svg) no-repeat 50% 50%;
+}
+
+.backgroundImage {
+  background: url(../app/images/Group\ 1000005860.svg) no-repeat 50% 50%;
+}
+
+.rectangle {
+  background: url(../app/images/Rectangle\ 21832-1.svg) no-repeat 50% 50%;
+}
+
+.card:hover .text {
+  transform: translateY(0);
+}
+
+.slider {
+  width: 100%;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* .swiper-wrapper {
+    transform: translate3d(-753.75px, 0px, 0px) !important;
+} */
+
+.swiper-slide {
+  /* width: 335.5px !important;    */
+}
+
+.group {
+  background-image: none !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
