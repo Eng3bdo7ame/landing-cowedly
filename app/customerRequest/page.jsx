@@ -39,10 +39,10 @@ function QuestionnaireForm() {
         e.preventDefault();
 
         // Validate form fields
-        if (!formData.projectName || !formData.lastName || !formData.email || !formData.phone || !formData.message) {
-            setErrorMessage('Please fill in all required fields.');
-            return;
-        }
+        // if (!formData.projectName || !formData.lastName || !formData.email || !formData.phone || !formData.message) {
+        //     setErrorMessage('Please fill in all required fields.');
+        //     return;
+        // }
 
         setSubmittedData(formData);
         setShowInfo(true);
@@ -140,6 +140,14 @@ function QuestionnaireForm() {
                     </div>
                 )}
 
+                <div className="bg-gray-100 p-3 rounded-lg">
+                    <p className="text-gray-900 text-lg font-semibold">سعر الخدمة: 50 ج.م</p>
+                </div>
+
+                <div className="bg-gray-100 p-3 rounded-lg mt-3">
+                    <p className="text-gray-900 text-lg font-semibold">10 ايام</p>
+                </div>
+
                 <div className="pt-8 flex items-center justify-center gap-3">
                     <button
                         onClick={handleSendRequest}
@@ -232,6 +240,11 @@ function QuestionnaireForm() {
                             {errorMessage}
                         </div>
                     )}
+
+
+
+
+
                     <div className="my-2 w-1/2 lg:w-1/4">
                         <button
                             className="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"

@@ -21,6 +21,7 @@ export default function Navbar() {
     { name: "المكودين", href: "/team" },
     { name: "اعمالنا", href: "/products" },
     { name: "خدماتنا", href: "/servicess" },
+    { name: "منتجاتنا", href: "/projects" },
     { name: "حولنا", href: "/aboutUs" },
     { name: "الرئيسيه", href: "/" },
   ];
